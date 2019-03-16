@@ -1079,6 +1079,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews-slider__item {
+    margin: auto;
   }
 }
 
@@ -1334,6 +1340,12 @@ img {
 @media (max-width: 768px) {
   .slick-arrow {
     display: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .before-slider__dots {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
