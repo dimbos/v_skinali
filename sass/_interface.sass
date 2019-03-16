@@ -1,0 +1,129 @@
+body
+    +light
+    color: $text-color
+
+img
+    max-width: 100%
+
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        +bold
+        text-align: center
+        text-transform: uppercase
+    &__title
+        margin-bottom: 100px
+
+.button-o
+    text-transform: 
+    border: 2px solid $primary
+    padding: 17px 22px
+    font-size: 12px
+    +bold
+    color: $primary
+    background-color: #fff
+    text-decoration: none
+.button
+    padding: 25px 45px
+    text-transform: uppercase
+    border: none
+    background-color: $primary
+    color: #fff
+    +bold
+    text-decoration: none
+    &:hover
+        cursor: pointer
+    &-fitting
+        text-transform: uppercase
+        color: $primary
+        background-color: #fff
+        border: none
+    &-add
+        background-color: lighten($primary, 10%)
+        padding: 10px
+        border: none
+        color: #ffffff
+        text-transform: uppercase
+    &-like
+        background-color: $primary
+        height: 30px
+        border: none
+        width: 33px
+
+.bg-secondary
+    background: $bg-secondary
+
+.input
+    height: 80px
+    padding-left: 30px
+    border: 1px solid #dddddd
+.select
+    height: 80px
+    width: 100%  
+    border: 1px solid #ddd
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 20px
+        width: 20px
+        height: 20px
+        background: url('../img/arrow_down.png') no-repeat center
+        z-index: 9
+        background-size: 100%
+    &:hover
+        cursor: pointer   
+    &_checked
+        line-height: 80px
+        padding-left: 30px
+    &__dropdown
+        position: absolute
+        top: 80px
+        width: 100%
+        background-color: #fff
+        border: 1px solid #dddddd
+        padding: 0
+        margin: 0
+        list-style: none
+        padding: 0
+        display: none
+        &__open
+            display: block
+    &__option
+        padding: 20px
+        &:hover
+            background-color: $bg-secondary
+
+.checkbox
+    display: none
+    &:checked + label:before
+        background-color: $primary
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 40px
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            height: 30px
+            width: 30px
+            border: 1px solid #dddddd
+            margin-right: 20px
+@media (max-width: 576px)
+    .button
+        font-size: 10px
+        &-o
+            font-size: 10px
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px
+    .checkbox-label
+        margin-bottom: 10px
+        text-align: center
+    .form__button
+        padding: 0
